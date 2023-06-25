@@ -1,0 +1,42 @@
+## Implement a stack using a list in Python. Include the necessary methods such as push, pop, and isEmpty
+---->
+
+# Stack Creation
+def create_stack():
+    stack = list()            # declaring an empty list
+    return stack
+
+# Checking for empty stack
+def Isempty(stack):
+    return len(stack) == 0
+
+# Inserting elements into the stack
+def push(stack, n):
+    stack.append(n)
+    print("pushed item: " + n)
+
+# Removal of an element from the stack
+def pop(stack):
+    if (Isempty(stack)):
+        return "stack is empty"
+    else:
+        return stack.pop()
+
+# print stack elements
+def show(stack):
+    print("stack elements are: ")
+    for i in stack:
+        print(i)
+
+# example :
+stack = create_stack()
+push(stack, str(1))
+push(stack, str(2))
+push(stack, str(40))
+print("popped item: " + pop(stack))
+show(stack)
+
+
+
+
+
